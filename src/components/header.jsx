@@ -16,9 +16,9 @@ export default function header() {
         onMouseOut={(e) => {
           document.getElementById('mainMenu').classList.add('hide');
         }}
-        onClick={(e) => {
-          document.querySelector('.subColorIcon').classList.add('hide');
-        }}
+        // onClick={(e) => {
+        //   document.querySelector('.subColorIcon').classList.add('hide');
+        // }}
       >
         <span href="#" className="menuToggleLink">
           <svg
@@ -74,7 +74,7 @@ export default function header() {
             </Link>
           </li>
           <h4 className="menuLabel">رزومه</h4>
-          <li>
+          {/* <li>
             <Link to="/portfolio">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -88,7 +88,7 @@ export default function header() {
               </svg>
             </Link>
           </li>
-          <h4 className="menuLabel">نمونه کارها</h4>
+          <h4 className="menuLabel">نمونه کارها</h4> */}
           {/* <li>
             <Link to="/blog">
               <svg
@@ -122,7 +122,7 @@ export default function header() {
         </ul>
       </div>
 
-      <div
+      {/* <div
         className="color"
         id="color"
         onClick={(e) => {
@@ -190,7 +190,7 @@ export default function header() {
             </svg>
           </a>
         </span>
-      </div>
+      </div> */}
     </React.Fragment>
   );
 }
