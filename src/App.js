@@ -16,7 +16,7 @@ function App() {
         <Route exact path="/contact" element={<Contact />} />
         {/* <Route exact path="/blog" element={<Blog />} /> */}
         <Route exact path="/resume" element={<Resume />} />
-        <Route exact path="/portfolio" element={<Portfolio />} />
+        <Route exact path="/portfolio" element={<Home />} />
       </Routes>
     </>
   );
