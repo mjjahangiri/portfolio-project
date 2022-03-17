@@ -1,6 +1,6 @@
-import React from 'react';
-import Header from '../components/header';
-import { Link } from 'react-router-dom';
+import React from "react";
+import Header from "../components/header";
+import { Link } from "react-router-dom";
 
 const Portfolio = () => {
   return (
@@ -9,9 +9,9 @@ const Portfolio = () => {
         <div className="headPortfolio">
           <Header />
           <h1>Portfolio Page</h1>
-          <Link to="/contact" className="more">
+          {/* <Link to="/contact" className="more">
             تماس با من
-          </Link>
+          </Link> */}
         </div>
       </div>
     </>
