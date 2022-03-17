@@ -82,18 +82,18 @@
   display: flex;
   margin: 10px auto;
   padding: 5px 0px;
-  color: var(--color-primery-link);
+  color: var(--color-primery-link) !important;
   text-decoration: none;
 }
 .mainMenu a:hover {
-  color: var(--color-primery-link-darker);
-  transform: scale(0.9) translateX(-15%);
+  color: var(--color-primery-titr);
+  transform: translateX(-15%);
 }
 .mainMenu li {
   height: 40px;
 }
 .mainMenu li:hover {
-  background-color: var(--color-primery-box-background-darker);
+  background-color: var(--color-primery-titr);
 }
 
 .menuToggleLink {
@@ -104,19 +104,20 @@
 }
 .bi-list {
   text-align: right;
-  border: 0.1rem solid var(--color-primery-link-darker);
+  border: 0.1rem solid black;
   border-radius: 5px;
   background-color: var(--color-primery-box-background);
 }
 .bi-list:hover {
   cursor: pointer;
-  background-color: var(--color-primery-box-background-darker);
+  background-color: var(--color-primery-titr);
 }
 .menuLabel {
   padding: 0px 10px 0px 15px;
-  background-color: var(--color-primery-box-background-darker);
+  background-color: var(--color-primery-link);
   border-top-left-radius: 10px;
   border-bottom-left-radius: 10px;
+  color: var(--color-primery-box-background-darker);
   margin: -40px 0px;
   width: max-content;
   position: absolute;
