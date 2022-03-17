@@ -1,26 +1,27 @@
-import React from 'react';
-import '../main.css';
-import Contact from '../img/contact.gif';
-import { MdLocationPin, MdPhoneEnabled, MdEmail } from 'react-icons/md';
+import React from "react";
+import "../main.css";
+import "../Pages/pages.css";
+import Contact from "../img/telegram.gif";
+import { MdLocationPin, MdPhoneEnabled, MdEmail } from "react-icons/md";
 import {
   BsInstagram,
   BsTelegram,
   BsLinkedin,
   BsWhatsapp,
   BsGithub,
-} from 'react-icons/bs';
-import { FiGitlab } from 'react-icons/fi';
-import 'bootstrap/dist/css/bootstrap.css';
-import Header from '../components/header';
+} from "react-icons/bs";
+import { FiGitlab } from "react-icons/fi";
+import "bootstrap/dist/css/bootstrap.css";
+import Header from "../components/header";
 
 export default function contact() {
   return (
     <>
       <Header />
       <div
-        className="head"
+        className="head mx-auto p-0 my-0 position-relative vh-100 flex-column top-0 left-0 w-100 d-flex align-items-center justify-content-center"
         onClick={(e) => {
-          document.querySelector('.subColorIcon').classList.add('hide');
+          document.querySelector(".subColorIcon").classList.add("hide");
         }}
       >
         <div className="contact">
