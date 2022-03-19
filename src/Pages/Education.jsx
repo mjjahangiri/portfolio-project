@@ -1,40 +1,58 @@
 import React from "react";
 import Header from "../components/header";
+import EducationAvatar from "../img/Education.png";
 
 export default function Education() {
   return (
     <React.Fragment>
       <Header />
-      <div className="">
-        <div className="resumeContainerSection resumeContainerGroup">
-          <div className=" resumeSection">
-            <h5 className="resumeTitr">سوابق تحصیلی</h5>
-            <ul className="resumeList">
-              <li className="resumeItem">
-                دارای مدرک کارشناسی مهندسی فناوری اطلاعات از دانشگاه پیام نور
-                چناران
-              </li>
-              <li className="resumeItem">
-                دارای مدرک MCSA 2012 از موسسه برتراندیشان
-              </li>
-              <li className="resumeItem">
-                دارای مدرک CCNA از موسسه برتراندیشان
-              </li>
-              <li className="resumeItem">
-                دارای مدرکComptia Network+ ازسایت tosinso
-              </li>
-              <li className="resumeItem">دوره HTML و CSS به صورت Self-study</li>
-              <li className="resumeItem">دوره Bootstrap به صورت self-study</li>
-              <li className="resumeItem">دوره JQuery به صورت self-study</li>
-              <li className="resumeItem">دوره JavaScript به صورت self-study</li>
-              <li className="resumeItem">دوره Git به صورت self-study</li>
-              <li className="resumeItem">دوره JavaScript به صورت self-study</li>
-              <li className="resumeItem">دوره ES6 به صورت self-study</li>
-              <li className="resumeItem">دوره React js به صورت self-study</li>
-              <li className="resumeItem">
-                درحال یادگیری react/redux/firebase...
-              </li>
-            </ul>
+      <div className="p-0 m-0 position-relative top-0 left-0 w-100 d-flex flex-lg-column flex-row overflow-auto align-items-center justify-content-center d-flex">
+        <div className="container row mx-auto d-flex vh-100 align-items-center">
+          <div className="col col-md py-4">
+            <h2 className="fw-bolder vazir mt-4 mb-5 w-100 text-center align-items-start justify-content-center d-flex">
+              سوابق تحصیلی
+            </h2>
+            <div className="row resumeSection">
+              <ul className="list-group d-flex vazir">
+                <li className="list-group-item rtl bg-transparent border-0 text-end">
+                  دارای مدرک کارشناسی مهندسی فناوری اطلاعات از دانشگاه پیام نور
+                  چناران
+                </li>
+                <li className="list-group-item rtl bg-transparent border-0 text-end">
+                  دارای مدرک MCSA 2012 از موسسه برتراندیشان
+                </li>
+                <li className="list-group-item rtl bg-transparent border-0 text-end">
+                  دارای مدرک CCNA از موسسه برتراندیشان
+                </li>
+                <li className="list-group-item rtl bg-transparent border-0 text-end">
+                  دارای مدرک Comptia Network Plus ازسایت Tosinso
+                </li>
+                <li className="list-group-item rtl bg-transparent border-0 text-end">
+                  دوره HTML و CSS
+                </li>
+                <li className="list-group-item rtl bg-transparent border-0 text-end">
+                  دوره Bootstrap
+                </li>
+                <li className="list-group-item rtl bg-transparent border-0 text-end">
+                  دوره jQuery
+                </li>
+                <li className="list-group-item rtl bg-transparent border-0 text-end">
+                  دوره JavaScript
+                </li>
+                <li className="list-group-item rtl bg-transparent border-0 text-end">
+                  دوره Git
+                </li>
+                <li className="list-group-item rtl bg-transparent border-0 text-end">
+                  دوره ES6
+                </li>
+                <li className="list-group-item rtl bg-transparent border-0 text-end">
+                  دوره React js
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div className="col-md d-none d-md-flex justify-content-center">
+            <img src={EducationAvatar} width="100%" alt="" />
           </div>
         </div>
       </div>
