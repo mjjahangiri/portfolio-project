@@ -8,7 +8,7 @@ export default function Skills() {
       <Header />
       <div className="p-0 m-0 position-relative top-0 left-0 w-100 d-flex flex-lg-column flex-row overflow-auto align-items-center justify-content-center d-flex">
         <div className="container row mx-auto d-flex vh-100 align-items-center">
-          <div className="col col-md-9 py-5">
+          <div className="col col-md-8 py-5">
             <h2 className="fw-bolder vazir mt-4 mb-5 w-100 text-center align-items-start justify-content-center d-flex">
               مهارت ها
             </h2>
@@ -71,8 +71,8 @@ export default function Skills() {
               </div>
             </div>
           </div>
-          <div className="col-md-3 d-none d-md-flex justify-content-center">
-            <img src={SkillsAvatar} width="100%" alt="" />
+          <div className="col-md-4 d-none d-md-flex justify-content-end p-0">
+            <img src={SkillsAvatar} width="85%" alt="" />
           </div>
         </div>
       </div>
