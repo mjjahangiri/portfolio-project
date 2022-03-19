@@ -1,6 +1,6 @@
 import React from "react";
 import Header from "../components/header";
-import EducationAvatar from "../img/Education.png";
+import EducationAvatar from "../img/Education1.png";
 
 export default function Education() {
   return (
@@ -8,7 +8,7 @@ export default function Education() {
       <Header />
       <div className="p-0 m-0 position-relative top-0 left-0 w-100 d-flex flex-lg-column flex-row overflow-auto align-items-center justify-content-center d-flex">
         <div className="container row mx-auto d-flex vh-100 align-items-center">
-          <div className="col col-md py-4">
+          <div className="col col-md-8 py-4">
             <h2 className="fw-bolder vazir mt-4 mb-5 w-100 text-center align-items-start justify-content-center d-flex">
               سوابق تحصیلی
             </h2>
@@ -51,8 +51,8 @@ export default function Education() {
               </ul>
             </div>
           </div>
-          <div className="col-md d-none d-md-flex justify-content-center">
-            <img src={EducationAvatar} width="100%" alt="" />
+          <div className="col-md-4 d-none p-0 d-md-flex justify-content-center">
+            <img src={EducationAvatar} width="80%" alt="" />
           </div>
         </div>
       </div>
