@@ -19,15 +19,15 @@ export default function contact() {
     <>
       <Header />
       <div
-        className="head mx-auto p-0 my-0 position-relative vh-100 flex-column top-0 left-0 w-100 d-flex align-items-center justify-content-center"
+        className="mx-auto p-0 my-0 position-relative vh-100 flex-column top-0 left-0 w-100 d-flex align-items-center justify-content-center"
         onClick={(e) => {
           document.querySelector(".subColorIcon").classList.add("hide");
         }}
       >
         <div className="contact">
           <img src={Contact} alt="contact me" />
-          <h5 className="d-flex h-100 m-0 mb-3 justify-content-center align-items-center">
-            ایران - خراسان رضوی - مشهد - چهارراه ساجدی
+          <h5 className="d-flex h-100 m-0 mb-3 justify-content-center text-center align-items-center">
+            ایران - خراسان رضوی - مشهد - چهارراه ساجدی - فدک 17
             <MdLocationPin className="mx-2" />
           </h5>
           <h5 className="d-flex h-100 m-0 mb-3 justify-content-center align-items-center">

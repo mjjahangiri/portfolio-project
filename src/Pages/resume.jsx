@@ -6,7 +6,7 @@ import "bootstrap/dist/css/bootstrap.css";
 const Resume = () => {
   return (
     <>
-      <div className="head">
+      <div className="">
         <div className="headResume">
           <Header />
 

@@ -5,7 +5,7 @@ export default function Experience() {
   return (
     <React.Fragment>
       <Header />
-      <div className="head">
+      <div className="">
         <div className="resumeContainerSection resumeContainerGroup">
           <div className=" resumeSection">
             <h5 className="resumeTitr">سوابق کاری</h5>

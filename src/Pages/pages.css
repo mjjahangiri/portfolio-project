@@ -1,7 +1,4 @@
 /* ////////////////// MAIN PAGE ////////////////// */
-.head {
-  background: linear-gradient(to left, #379683, #8ee4af);
-}
 .headMain h1,
 h4 {
   text-align: center;
@@ -81,9 +78,9 @@ h4 {
   flex-direction: row;
 }
 .resumeSection {
-  background-color: var(--color-primery-link);
-  padding: 30px !important;
-  box-shadow: 0px 0px 25px #111;
+  /* background-color: var(--color-primery-link); */
+  padding: 30px 0px !important;
+  box-shadow: 0px 15px 30px #379683;
   border-radius: 10px;
 }
 .resumeContainerGroup {

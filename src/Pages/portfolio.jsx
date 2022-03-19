@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 const Portfolio = () => {
   return (
     <>
-      <div className="head">
+      <div className="">
         <div className="headPortfolio">
           <Header />
           <h1>Portfolio Page</h1>
