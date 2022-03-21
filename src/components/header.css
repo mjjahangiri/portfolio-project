@@ -38,12 +38,17 @@
   justify-content: center;
 }
 
-.FaLang:hover,
-.EnLang:hover {
+.FaLang:hover {
   cursor: pointer;
   border-radius: 10px;
   color: var(--color-primery-text);
   background-color: var(--color-primery-box-background);
+}
+.EnLang:hover {
+  cursor: pointer;
+  border-radius: 10px;
+  color: var(--color-primery-text);
+  background-color: var(--color-primery-link-darker);
 }
 
 .menuToggleLink {
@@ -62,7 +67,7 @@
   justify-content: center;
 }
 
-.mainMenu {
+.FaMainMenu {
   background-color: var(--color-primery-box-background);
   padding: 5px 0px;
   list-style: none;
@@ -72,7 +77,17 @@
   border-top-right-radius: 10px;
   border-top-left-radius: 10px;
 }
-.langMenu {
+.EnMainMenu {
+  background-color: var(--color-primery-link-darker);
+  padding: 5px 0px;
+  list-style: none;
+  transition: 0.3s;
+  margin-top: -40px;
+  padding-top: 40px;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+}
+.FaLangMenu {
   background-color: var(--color-primery-box-background);
   padding: 0px;
   list-style: none;
@@ -84,7 +99,29 @@
   border-top-right-radius: 10px;
   border-bottom-right-radius: 10px;
 }
+.EnLangMenu {
+  background-color: var(--color-primery-link-darker);
+  padding: 0px;
+  list-style: none;
+  transition: all 0.3s ease-in-out;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0px;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
 
+.bi-globe {
+  /* text-align: right; */
+  /* border-radius: 50%; */
+  /* padding: 10px; */
+}
+.bi-globe:hover {
+  /* cursor: pointer;
+  color: var(--color-primery-link-darker);
+  background-color: var(--color-primery-box-background-darker); */
+}
 .bi-list {
   text-align: right;
   border-radius: 10px;
@@ -96,7 +133,8 @@
   background-color: var(--color-primery-box-background-darker);
 }
 
-.mainMenu a {
+.FaMainMenu a,
+.EnMainMenu a {
   justify-content: center;
   display: flex;
   margin: 10px auto;
@@ -104,7 +142,8 @@
   color: var(--color-primery-link) !important;
   text-decoration: none;
 }
-.langMenu a {
+.FaLangMenu a,
+.EnLangMenu a {
   justify-content: center;
   display: flex;
   color: var(--color-primery-box-background-darker);
@@ -116,30 +155,38 @@
 .EnMainMenu a:hover {
   color: var(--color-primery-titr);
   transform: translateX(15%);
+  border-top: 1px solid var(--color-primery-box-background-darker) !important;
 }
 
 .FaMainMenu a:hover {
   color: var(--color-primery-titr);
+  border-top: 1px solid var(--color-primery-box-background-darker) !important;
   transform: translateX(-15%);
 }
 
-.langMenu a:hover {
+.FaLangMenu a:hover,
+.EnLangMenu a:hover {
   cursor: pointer;
   color: var(--color-primery-link-darker);
   border-radius: 10px;
   background-color: var(--color-primery-box-background-darker);
 }
 
-.mainMenu li {
+.FaMainMenu li,
+.EnMainMenu li {
   height: 40px;
 }
-.langMenu li {
+.FaLangMenu li,
+.EnLangMenu li {
   height: 40px;
   width: 40px;
 }
 
-.mainMenu li:hover {
-  background-color: var(--color-primery-titr);
+.FaMainMenu li:hover {
+  background-color: var(--color-primery-box-background);
+}
+.EnMainMenu li:hover {
+  background-color: var(--color-primery-link-darker);
 }
 .langMenu li:hover {
   /* background-color: var(--color-primery-titr); */
@@ -147,7 +194,7 @@
 
 .FaMenuLabel {
   padding: 0px 10px 0px 15px;
-  background-color: var(--color-primery-link);
+  background-color: var(--color-primery-box-background);
   border-top-left-radius: 10px;
   border-bottom-left-radius: 10px;
   color: var(--color-primery-box-background-darker);
@@ -161,10 +208,12 @@
   font-size: 1rem;
   font-weight: bold;
   line-height: 35px;
+  border: 1px solid var(--color-primery-box-background-darker);
+  border-right: 0px;
 }
 .EnMenuLabel {
   padding: 0px 10px 0px 15px;
-  background-color: var(--color-primery-link);
+  background-color: var(--color-primery-link-darker);
   border-top-right-radius: 10px;
   border-bottom-right-radius: 10px;
   color: var(--color-primery-box-background-darker);
@@ -178,8 +227,11 @@
   font-size: 1rem;
   font-weight: bold;
   line-height: 35px;
+  border: 1px solid var(--color-primery-box-background-darker);
+  border-left: 0px;
 }
 
-.mainMenu li:hover + h4 {
+.FaMainMenu li:hover + h4,
+.EnMainMenu li:hover + h4 {
   display: block !important;
 }

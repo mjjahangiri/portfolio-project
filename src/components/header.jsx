@@ -41,10 +41,7 @@ export default function header({ lang, onClick }) {
           </svg>
         </span>
 
-        <ul
-          className={`${direction} ${lang}MainMenu mainMenu hide`}
-          id="mainMenu"
-        >
+        <ul className={`${direction} ${lang}MainMenu hide`} id="mainMenu">
           <li>
             <Link to="/">
               <img src={Home} height="25" width="25" alt="" />
@@ -120,7 +117,7 @@ export default function header({ lang, onClick }) {
           document.getElementById("langMenu").classList.add("hide");
         }}
       >
-        <ul className="langMenu hide" id="langMenu">
+        <ul className={`${lang}LangMenu hide`} id="langMenu">
           <li>
             <Link to onClick={onClick}>
               En
