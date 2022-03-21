@@ -8,7 +8,6 @@ import "./pages.css";
 export default function main() {
   return (
     <React.Fragment>
-      <Header />
       <div className="p-0 m-0 position-relative top-0 left-0 w-100 d-flex flex-lg-column flex-row overflow-auto align-items-center justify-content-center d-flex">
         <div className="container row mx-auto">
           <div className="col d-flex order-1 order-md-0 align-items-start headMain justify-content-center flex-column">

@@ -17,7 +17,6 @@ import Header from "../components/header";
 export default function contact() {
   return (
     <>
-      <Header />
       <div
         className="mx-auto p-0 my-0 position-relative vh-100 flex-column top-0 left-0 w-100 d-flex align-items-center justify-content-center"
         onClick={(e) => {

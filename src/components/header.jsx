@@ -26,13 +26,19 @@ export default function header() {
         }}
       >
         <span href="#" className="menuToggleLink">
-          <img
-            src={Menu}
-            className="bi-list p-1"
-            height="40"
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
             width="40"
-            alt=""
-          />
+            height="40"
+            fill="currentColor"
+            className="bi bi-list"
+            viewBox="0 0 16 16"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"
+            />
+          </svg>
         </span>
 
         <ul className="mainMenu hide" id="mainMenu">
@@ -43,11 +49,11 @@ export default function header() {
           </li>
           <h4 className="menuLabel">صفحه اصلی</h4>
           <li>
-            <Link to="/resume">
+            <a href="https://8pic.ir/do.php?filename=MJJResume.pdf">
               <img src={Resume} height="25" width="25" alt="" />
-            </Link>
+            </a>
           </li>
-          <h4 className="menuLabel">رزومه</h4>
+          <h4 className="menuLabel">دانلود رزومه</h4>
           <li>
             <Link to="/portfolio">
               <img src={Portfolio} height="25" width="25" alt="" />
@@ -81,75 +87,37 @@ export default function header() {
         </ul>
       </div>
 
-      {/* <div
-        className="color"
-        id="color"
-        onClick={(e) => {
-          console.log('Clicked');
-          document.querySelector('.subColorIcon').classList.toggle('hide');
+      <div
+        className="lang"
+        id="lang"
+        onMouseOver={(e) => {
+          document.getElementById("langMenu").classList.remove("hide");
+        }}
+        onMouseOut={(e) => {
+          document.getElementById("langMenu").classList.add("hide");
         }}
       >
-        <span href="#">
+        <ul className="langMenu hide" id="langMenu">
+          <li>
+            <a href="#">En</a>
+          </li>
+          <li>
+            <a href="#">Fa</a>
+          </li>
+        </ul>
+        <span href="#" className="langToggleLink">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="30"
             height="30"
             fill="currentColor"
-            className="bi bi-palette"
+            className="bi bi-globe"
             viewBox="0 0 16 16"
           >
-            <path d="M8 5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3zm4 3a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3zM5.5 7a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm.5 6a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z" />
-            <path d="M16 8c0 3.15-1.866 2.585-3.567 2.07C11.42 9.763 10.465 9.473 10 10c-.603.683-.475 1.819-.351 2.92C9.826 14.495 9.996 16 8 16a8 8 0 1 1 8-8zm-8 7c.611 0 .654-.171.655-.176.078-.146.124-.464.07-1.119-.014-.168-.037-.37-.061-.591-.052-.464-.112-1.005-.118-1.462-.01-.707.083-1.61.704-2.314.369-.417.845-.578 1.272-.618.404-.038.812.026 1.16.104.343.077.702.186 1.025.284l.028.008c.346.105.658.199.953.266.653.148.904.083.991.024C14.717 9.38 15 9.161 15 8a7 7 0 1 0-7 7z" />
+            <path d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm7.5-6.923c-.67.204-1.335.82-1.887 1.855A7.97 7.97 0 0 0 5.145 4H7.5V1.077zM4.09 4a9.267 9.267 0 0 1 .64-1.539 6.7 6.7 0 0 1 .597-.933A7.025 7.025 0 0 0 2.255 4H4.09zm-.582 3.5c.03-.877.138-1.718.312-2.5H1.674a6.958 6.958 0 0 0-.656 2.5h2.49zM4.847 5a12.5 12.5 0 0 0-.338 2.5H7.5V5H4.847zM8.5 5v2.5h2.99a12.495 12.495 0 0 0-.337-2.5H8.5zM4.51 8.5a12.5 12.5 0 0 0 .337 2.5H7.5V8.5H4.51zm3.99 0V11h2.653c.187-.765.306-1.608.338-2.5H8.5zM5.145 12c.138.386.295.744.468 1.068.552 1.035 1.218 1.65 1.887 1.855V12H5.145zm.182 2.472a6.696 6.696 0 0 1-.597-.933A9.268 9.268 0 0 1 4.09 12H2.255a7.024 7.024 0 0 0 3.072 2.472zM3.82 11a13.652 13.652 0 0 1-.312-2.5h-2.49c.062.89.291 1.733.656 2.5H3.82zm6.853 3.472A7.024 7.024 0 0 0 13.745 12H11.91a9.27 9.27 0 0 1-.64 1.539 6.688 6.688 0 0 1-.597.933zM8.5 12v2.923c.67-.204 1.335-.82 1.887-1.855.173-.324.33-.682.468-1.068H8.5zm3.68-1h2.146c.365-.767.594-1.61.656-2.5h-2.49a13.65 13.65 0 0 1-.312 2.5zm2.802-3.5a6.959 6.959 0 0 0-.656-2.5H12.18c.174.782.282 1.623.312 2.5h2.49zM11.27 2.461c.247.464.462.98.64 1.539h1.835a7.024 7.024 0 0 0-3.072-2.472c.218.284.418.598.597.933zM10.855 4a7.966 7.966 0 0 0-.468-1.068C9.835 1.897 9.17 1.282 8.5 1.077V4h2.355z" />
           </svg>
         </span>
       </div>
-      <div className="subColorIcon hide">
-        <span>
-          <a href="#">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="20"
-              height="20"
-              fill="currentColor"
-              className="bi bi-droplet-fill colorSecondary"
-              id="color-secondary"
-              viewBox="0 0 16 16"
-            >
-              <path d="M8 16a6 6 0 0 0 6-6c0-1.655-1.122-2.904-2.432-4.362C10.254 4.176 8.75 2.503 8 0c0 0-6 5.686-6 10a6 6 0 0 0 6 6ZM6.646 4.646l.708.708c-.29.29-1.128 1.311-1.907 2.87l-.894-.448c.82-1.641 1.717-2.753 2.093-3.13Z" />
-            </svg>
-          </a>
-        </span>
-        <span>
-          <a href="#">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="20"
-              height="20"
-              fill="currentColor"
-              className="bi bi-droplet-fill colorPrimery"
-              id="color-primery"
-              viewBox="0 0 16 16"
-            >
-              <path d="M8 16a6 6 0 0 0 6-6c0-1.655-1.122-2.904-2.432-4.362C10.254 4.176 8.75 2.503 8 0c0 0-6 5.686-6 10a6 6 0 0 0 6 6ZM6.646 4.646l.708.708c-.29.29-1.128 1.311-1.907 2.87l-.894-.448c.82-1.641 1.717-2.753 2.093-3.13Z" />
-            </svg>
-          </a>
-        </span>
-        <span>
-          <a href="#">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="20"
-              height="20"
-              fill="currentColor"
-              className="bi bi-droplet-fill colorThird"
-              id="color-third"
-              viewBox="0 0 16 16"
-            >
-              <path d="M8 16a6 6 0 0 0 6-6c0-1.655-1.122-2.904-2.432-4.362C10.254 4.176 8.75 2.503 8 0c0 0-6 5.686-6 10a6 6 0 0 0 6 6ZM6.646 4.646l.708.708c-.29.29-1.128 1.311-1.907 2.87l-.894-.448c.82-1.641 1.717-2.753 2.093-3.13Z" />
-            </svg>
-          </a>
-        </span>
-      </div> */}
     </React.Fragment>
   );
 }

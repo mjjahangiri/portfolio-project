@@ -5,7 +5,6 @@ import ExperienceAvatar from "../img/ExperienceAvatar.png";
 export default function Experience() {
   return (
     <React.Fragment>
-      <Header />
       <div className="p-0 m-0 position-relative top-0 left-0 w-100 d-flex flex-lg-column flex-row overflow-auto align-items-center justify-content-center d-flex">
         <div className="container row mx-auto d-flex vh-100 align-items-center">
           <div className="col col-md-8 py-4">
