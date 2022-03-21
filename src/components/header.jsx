@@ -9,14 +9,14 @@ import Contact from "../img/Contact.svg";
 import Education from "../img/Education.svg";
 import Experience from "../img/Experience.svg";
 import Skills from "../img/Skills.svg";
-import Menu from "../img/Menu.svg";
 import "./header.css";
 
-export default function header() {
+export default function header({ lang, onClick }) {
+  const direction = lang === "Fa" ? "rtl" : "ltr";
   return (
     <React.Fragment>
       <div
-        className="menu"
+        className={`${lang}Menu`}
         id="menu"
         onMouseOver={(e) => {
           document.getElementById("mainMenu").classList.remove("hide");
@@ -35,60 +35,83 @@ export default function header() {
             viewBox="0 0 16 16"
           >
             <path
-              fill-rule="evenodd"
+              fillRule="evenodd"
               d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"
             />
           </svg>
         </span>
 
-        <ul className="mainMenu hide" id="mainMenu">
+        <ul
+          className={`${direction} ${lang}MainMenu mainMenu hide`}
+          id="mainMenu"
+        >
           <li>
             <Link to="/">
               <img src={Home} height="25" width="25" alt="" />
             </Link>
           </li>
-          <h4 className="menuLabel">صفحه اصلی</h4>
+          <h4 className={`${lang}MenuLabel`}>
+            {lang === "Fa" ? "صفحه اصلی" : "Home"}
+          </h4>
           <li>
-            <a href="https://8pic.ir/do.php?filename=MJJResume.pdf">
-              <img src={Resume} height="25" width="25" alt="" />
-            </a>
+            {lang === "Fa" ? (
+              <a href="https://8pic.ir/do.php?filename=MJJResume.pdf">
+                <img src={Resume} height="25" width="25" alt="" />
+              </a>
+            ) : (
+              <a href="https://8pic.ir/do.php?filename=MJResumeEN_deef2.pdf">
+                <img src={Resume} height="25" width="25" alt="" />
+              </a>
+            )}
           </li>
-          <h4 className="menuLabel">دانلود رزومه</h4>
+          <h4 className={`${lang}MenuLabel`}>
+            {lang === "Fa" ? "دانلود رزومه" : "Resume Download"}
+          </h4>
           <li>
             <Link to="/portfolio">
               <img src={Portfolio} height="25" width="25" alt="" />
             </Link>
           </li>
-          <h4 className="menuLabel">نمونه کارها</h4>
+          <h4 className={`${lang}MenuLabel`}>
+            {lang === "Fa" ? "نمونه کارها" : "Portfolio"}
+          </h4>
           <li>
             <Link to="/skills">
               <img src={Skills} height="25" width="25" alt="" />
             </Link>
           </li>
-          <h4 className="menuLabel">مهارت ها</h4>
+          <h4 className={`${lang}MenuLabel`}>
+            {lang === "Fa" ? "مهارت ها" : "Skills"}
+          </h4>
           <li>
             <Link to="/education">
               <img src={Education} height="25" width="25" alt="" />
             </Link>
           </li>
-          <h4 className="menuLabel">سوابق تحصیلی</h4>
+          <h4 className={`${lang}MenuLabel`}>
+            {lang === "Fa" ? "سوابق تحصیلی" : "Education"}
+          </h4>
           <li>
             <Link to="/experience">
               <img src={Experience} height="25" width="25" alt="" />
             </Link>
           </li>
-          <h4 className="menuLabel">سوابق کاری</h4>
+          <h4 className={`${lang}MenuLabel`}>
+            {lang === "Fa" ? "سوابق کاری" : "Experience"}
+          </h4>
           <li>
             <Link to="/contact">
               <img src={Contact} height="25" width="25" alt="" />
             </Link>
           </li>
-          <h4 className="menuLabel">تماس با من</h4>
+          <h4 className={`${lang}MenuLabel`}>
+            {lang === "Fa" ? "تماس با من" : "Contact Me"}
+          </h4>
         </ul>
       </div>
 
       <div
-        className="lang"
+        className={`${lang}Lang`}
         id="lang"
         onMouseOver={(e) => {
           document.getElementById("langMenu").classList.remove("hide");
@@ -99,10 +122,14 @@ export default function header() {
       >
         <ul className="langMenu hide" id="langMenu">
           <li>
-            <a href="#">En</a>
+            <Link to onClick={onClick}>
+              En
+            </Link>
           </li>
           <li>
-            <a href="#">Fa</a>
+            <Link to onClick={onClick}>
+              Fa
+            </Link>
           </li>
         </ul>
         <span href="#" className="langToggleLink">
