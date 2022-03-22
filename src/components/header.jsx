@@ -52,11 +52,11 @@ export default function header({ lang, onClick }) {
           </h4>
           <li>
             {lang === "Fa" ? (
-              <a href="https://8pic.ir/do.php?filename=MJJResume.pdf">
+              <a href="https://github.com/mjjahangiri/portfolio/blob/main/src/Resume/MJJResumeFA.pdf">
                 <img src={Resume} height="25" width="25" alt="" />
               </a>
             ) : (
-              <a href="https://8pic.ir/do.php?filename=MJResumeEN_deef2.pdf">
+              <a href="https://github.com/mjjahangiri/portfolio/blob/main/src/Resume/MJJResumeEN.pdf">
                 <img src={Resume} height="25" width="25" alt="" />
               </a>
             )}

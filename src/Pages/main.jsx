@@ -10,7 +10,7 @@ export default function main({ lang }) {
         className={`${direction} p-0 m-0 position-relative top-0 left-0 w-100 d-flex flex-lg-column flex-row overflow-auto align-items-center justify-content-center d-flex`}
       >
         <div className="container row mx-auto">
-          <div className="col d-flex order-1 order-md-0 align-items-start headMain justify-content-center flex-column">
+          <div className="col-12 col-md d-flex order-1 order-md-0 align-items-start headMain justify-content-center flex-column">
             {lang === "Fa" ? (
               <>
                 <h1>
@@ -43,8 +43,8 @@ export default function main({ lang }) {
             <PageArrowLink link="/resume" classStyle="next" shape="right" />
           </div> */}
           </div>
-          <div className="col vh-100 order-0 order-md-1 justify-content-center px-0 d-flex">
-            <img src={Mjj} height="100%" alt="" />
+          <div className="col-12 col-md img-fluid vh-100 order-0 order-md-1 justify-content-center px-0 d-flex">
+            <img src={Mjj} className="vh-100" alt="" />
           </div>
         </div>
       </div>

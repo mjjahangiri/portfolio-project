@@ -12,10 +12,10 @@ export default function portfolio({ lang }) {
         className={`${direction} px-0 py-5 m-0 position-relative top-0 left-0 w-100`}
       >
         <div className="container row mx-auto d-flex align-items-center">
-          <div className="col col-md p-4">
+          <div className="col col-md p-4 order-1 order-md-0">
             <div className="row resumeSection">
               <h6
-                className={`p-4 ${textDirection} w-75 mx-auto text-center`}
+                className={`p-0 p-lg-4 ${textDirection} w-75 mx-auto text-center`}
                 style={{ lineHeight: "2rem" }}
               >
                 {lang === "Fa"
@@ -24,7 +24,7 @@ export default function portfolio({ lang }) {
               </h6>
             </div>
           </div>
-          <div className="col-md d-none p-4 d-md-flex justify-content-end p-0">
+          <div className="col-md p-4 d-flex order-0 order-md-1 justify-content-end p-0">
             <a
               href="https://mjjahangiri.github.io/Otagh-Bazargani/"
               target="_blank"
@@ -36,7 +36,7 @@ export default function portfolio({ lang }) {
         </div>
         <hr className="text-dark w-50 mx-auto fs-2" />
         <div className="container row mx-auto py-3 d-flex align-items-center">
-          <div className="col-md d-none p-4 d-md-flex justify-content-start p-0">
+          <div className="col-md p-4 d-flex justify-content-start p-0">
             <a
               href="https://mjjahangiri.github.io/piggame/"
               target="_blank"
@@ -48,7 +48,7 @@ export default function portfolio({ lang }) {
           <div className="col col-md p-4">
             <div className="row resumeSection">
               <h6
-                className={`p-4 ${textDirection} w-75 mx-auto text-center`}
+                className={`p-0 p-lg-4 ${textDirection} w-75 mx-auto text-center`}
                 style={{ lineHeight: "2rem" }}
               >
                 {lang === "Fa"
@@ -60,10 +60,10 @@ export default function portfolio({ lang }) {
         </div>
         <hr className="text-dark w-50 mx-auto fs-2" />
         <div className="container row py-3 mx-auto d-flex align-items-center">
-          <div className="col col-md p-4">
+          <div className="col col-md p-4 order-1 order-md-0">
             <div className="row resumeSection">
               <h6
-                className={`p-4 ${textDirection} w-75 mx-auto text-center`}
+                className={`p-0 p-lg-4 ${textDirection} w-75 mx-auto text-center`}
                 style={{ lineHeight: "2rem" }}
               >
                 {lang === "Fa"
@@ -72,7 +72,7 @@ export default function portfolio({ lang }) {
               </h6>
             </div>
           </div>
-          <div className="col-md d-none p-4 d-md-flex justify-content-end p-0">
+          <div className="col-md p-4 d-flex order-0 order-md-1 justify-content-end p-0">
             <a
               href="https://mjjahangiri.github.io/vidly/"
               target="_blank"
