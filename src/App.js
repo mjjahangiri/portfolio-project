@@ -29,6 +29,11 @@ export default class App extends Component {
         <Header lang={lang} onClick={this.langHandle} />
         <Routes>
           <Route exact path="/" element={<Home lang={lang} />} />
+          <Route
+            exact
+            path="/portfolio-project"
+            element={<Home lang={lang} />}
+          />
           <Route exact path="/contact" element={<Contact lang={lang} />} />
           <Route exact path="/portfolio" element={<Portfolio lang={lang} />} />
           <Route exact path="/education" element={<Education lang={lang} />} />
