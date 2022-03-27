@@ -13,7 +13,7 @@ export default function portfolio({ lang }) {
       >
         <div className="container row mx-auto d-flex align-items-center">
           <div className="col col-md p-4 order-1 order-md-0">
-            <div className="row resumeSection">
+            <div className="row textSection">
               <h6
                 className={`p-0 p-lg-4 ${textDirection} w-75 mx-auto text-center`}
                 style={{ lineHeight: "2rem" }}
@@ -46,7 +46,7 @@ export default function portfolio({ lang }) {
             </a>
           </div>
           <div className="col col-md p-4">
-            <div className="row resumeSection">
+            <div className="row textSection">
               <h6
                 className={`p-0 p-lg-4 ${textDirection} w-75 mx-auto text-center`}
                 style={{ lineHeight: "2rem" }}
@@ -61,7 +61,7 @@ export default function portfolio({ lang }) {
         <hr className="text-dark w-50 mx-auto fs-2" />
         <div className="container row py-3 mx-auto d-flex align-items-center">
           <div className="col col-md p-4 order-1 order-md-0">
-            <div className="row resumeSection">
+            <div className="row textSection">
               <h6
                 className={`p-0 p-lg-4 ${textDirection} w-75 mx-auto text-center`}
                 style={{ lineHeight: "2rem" }}

@@ -15,7 +15,7 @@ export default function Education({ lang }) {
                 <h2 className="fw-bolder vazir mt-4 mb-5 w-100 text-center align-items-start justify-content-center d-flex">
                   سوابق تحصیلی
                 </h2>
-                <div className="row resumeSection">
+                <div className="row textSection">
                   <ul className="list-group d-flex vazir pe-4">
                     <li className="list-group-item rtl bg-transparent border-0 text-end">
                       دارای مدرک کارشناسی مهندسی فناوری اطلاعات از دانشگاه پیام
@@ -59,7 +59,7 @@ export default function Education({ lang }) {
                 <h2 className="fw-bolder vazir mt-4 mb-5 w-100 text-center align-items-start justify-content-center d-flex">
                   Education
                 </h2>
-                <div className="row resumeSection">
+                <div className="row textSection">
                   <ul className="list-group d-flex vazir ps-4">
                     <li className="list-group-item bg-transparent border-0 text-start">
                       Holds a bachelor's degree in IT engineering from Payame

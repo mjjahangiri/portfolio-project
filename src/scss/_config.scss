@@ -1,0 +1,26 @@
+$light-color: #edf5e1;
+$primary-color: #379683;
+$secondary-color: #8ee4af;
+$dark-color: #05386b;
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background: linear-gradient(to left, $primary-color, $secondary-color);
+  font-family: vazir !important;
+}
+
+.hide {
+  display: none !important;
+}
+
+.rtl {
+  direction: rtl !important;
+}
+
+.ltr {
+  direction: ltr !important;
+}

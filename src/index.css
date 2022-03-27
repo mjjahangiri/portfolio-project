@@ -1,20 +1,3 @@
-@font-face {
-  font-family: vazir;
-  src: url(Font/vazir/Vazir.woff);
-}
-@font-face {
-  font-family: iranSans;
-  src: url(Font/iransans/iransans.woff2);
-}
-
-.vazir {
-  font-family: vazir;
-}
-
-.iranSans {
-  font-family: iranSans;
-}
-
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",

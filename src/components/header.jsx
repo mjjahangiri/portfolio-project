@@ -9,7 +9,6 @@ import Contact from "../img/Contact.svg";
 import Education from "../img/Education.svg";
 import Experience from "../img/Experience.svg";
 import Skills from "../img/Skills.svg";
-import "./header.css";
 
 export default function header({ lang, onClick }) {
   const direction = lang === "Fa" ? "rtl" : "ltr";

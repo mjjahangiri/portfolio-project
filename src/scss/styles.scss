@@ -1,0 +1,21 @@
+@import "config";
+@import "header";
+@import "page";
+@import "utilities";
+
+@font-face {
+  font-family: vazir;
+  src: url(../Font/vazir/Vazir.woff);
+}
+@font-face {
+  font-family: iranSans;
+  src: url(../Font/iransans/iransans.woff2);
+}
+
+.vazir {
+  font-family: vazir;
+}
+
+.iranSans {
+  font-family: iranSans;
+}

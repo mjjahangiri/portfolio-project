@@ -1,6 +1,5 @@
 import React from "react";
 import Mjj from "../img/MJJ.png";
-import "./pages.css";
 
 export default function main({ lang }) {
   const direction = lang === "Fa" ? "ltr" : "rtl";
@@ -10,7 +9,7 @@ export default function main({ lang }) {
         className={`${direction} p-0 m-0 position-relative top-0 left-0 w-100 d-flex flex-lg-column flex-row overflow-auto align-items-center justify-content-center d-flex`}
       >
         <div className="container row mx-auto">
-          <div className="col-12 col-md d-flex order-1 order-md-0 align-items-start headMain justify-content-center flex-column">
+          <div className="col-12 col-md d-flex order-1 order-md-0 align-items-start main justify-content-center flex-column">
             {lang === "Fa" ? (
               <>
                 <h1>
@@ -18,7 +17,7 @@ export default function main({ lang }) {
                   <span id="name"> محمد جواد جهانگیری </span>
                   هستم
                 </h1>
-                <p className="subContent">
+                <p>
                   پشتیبان سیستم و شبکه های کامپیوتری، با 6 سال سابقه در شرکت دنا
                   سوله ، که به دلیل علاقه به برنامه نویسی تغییر گرایش دادم و طی
                   یک سال اخیر اقدام به یادگیری برنامه نویسی کردم و زبان های سمت

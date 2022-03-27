@@ -15,7 +15,7 @@ export default function Experience({ lang }) {
                 <h2 className="fw-bolder vazir mt-4 mb-5 w-100 text-center align-items-start justify-content-center d-flex">
                   سوابق کاری
                 </h2>
-                <div className="row resumeSection">
+                <div className="row textSection">
                   <ul className="list-group d-flex vazir pe-4">
                     <li className="list-group-item rtl bg-transparent border-0 text-end">
                       <h6 className="fw-bolder">
@@ -42,7 +42,7 @@ export default function Experience({ lang }) {
                 <h2 className="fw-bolder vazir mt-4 mb-5 w-100 text-center align-items-start justify-content-center d-flex">
                   Experience
                 </h2>
-                <div className="row resumeSection">
+                <div className="row textSection">
                   <ul className="list-group d-flex vazir ps-4">
                     <li className="list-group-item bg-transparent border-0 text-start">
                       <h6 className="fw-bolder">

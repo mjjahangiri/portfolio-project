@@ -1,0 +1,62 @@
+// Contact Page Styles
+.contact {
+  width: 50%;
+  margin: auto;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  display: grid;
+
+  img {
+    width: 50%;
+    margin: 0px auto;
+  }
+
+  .social {
+    justify-content: center;
+    display: flex;
+    padding: 0px;
+    flex-direction: row;
+    margin: 10px 0px;
+
+    a {
+      margin: 0px 8px;
+      color: $dark-color;
+
+      &:hover {
+        color: $secondary-color;
+      }
+    }
+  }
+}
+//  Main Page Styles
+.main {
+  h1,
+  h4 {
+    text-align: center;
+    float: left;
+    margin: 10px auto;
+    display: block;
+
+    span {
+      color: $light-color;
+      font-weight: bold;
+      text-shadow: 0px 5px 10px $dark-color;
+    }
+  }
+
+  p {
+    width: 90%;
+    text-align: center;
+    font-size: 1.1rem;
+    display: inline-block;
+    margin: 20px auto;
+    direction: rtl;
+  }
+}
+//  Text Section Styles
+.textSection {
+  padding: 30px 0px !important;
+  box-shadow: 0px 10px 30px $primary-color;
+  border-radius: 10px;
+}

@@ -8,8 +8,6 @@ import Experience from "./Pages/Experience";
 import Skills from "./Pages/Skills";
 import NotFound from "./Pages/NotFound";
 import Header from "./components/header.jsx";
-import "./App.css";
-import "./main.css";
 import "bootstrap-icons/font/bootstrap-icons.css";
 
 export default class App extends Component {

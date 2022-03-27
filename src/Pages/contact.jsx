@@ -1,6 +1,4 @@
 import React from "react";
-import "../main.css";
-import "../Pages/pages.css";
 import Contact from "../img/telegram.gif";
 import { MdLocationPin, MdPhoneEnabled, MdEmail } from "react-icons/md";
 import {
