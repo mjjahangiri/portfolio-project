@@ -160,7 +160,7 @@ export default function header({ lang, onClick }) {
                 root.style.setProperty("--primary-color", "#423F3E");
                 root.style.setProperty("--secondary-color", "#BDBDD7");
                 root.style.setProperty("--light-color", "#EEEDE7");
-                root.style.setProperty("--dark-color", "#868B8E");
+                root.style.setProperty("--dark-color", "#313131");
               }}
               title="#423F3E"
             >
@@ -180,7 +180,7 @@ export default function header({ lang, onClick }) {
                 root.style.setProperty("--primary-color", "#5C3D2E");
                 root.style.setProperty("--secondary-color", "#E3CAA5");
                 root.style.setProperty("--light-color", "#FFFBE9");
-                root.style.setProperty("--dark-color", "#AD8B73");
+                root.style.setProperty("--dark-color", "#3E322A");
               }}
               title="#5C3D2E"
             >

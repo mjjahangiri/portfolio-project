@@ -264,6 +264,7 @@
     }
 
     &:hover + h4 {
+      color: var(--light-color);
       display: block !important;
     }
   }
