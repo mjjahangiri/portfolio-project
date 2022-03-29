@@ -1,7 +1,19 @@
-$light-color: #edf5e1;
-$primary-color: #379683;
-$secondary-color: #8ee4af;
-$dark-color: #05386b;
+:root {
+  --primary-color: #216260;
+  --secondary-color: #9ebfc0;
+  --light-color: #dcdfe0;
+  --dark-color: #0d3530;
+
+  // --primary-color-2: #5C3D2E;
+  // --secondary-color-2: #E3CAA5;
+  // --light-color-2: #FFFBE9;
+  // --dark-color-2: #AD8B73;
+
+  // --primary-color-3: #423F3E;
+  // --secondary-color-3: #BDBDD7;
+  // --light-color-3: #EEEDE7;
+  // --dark-color-3: #868B8E;
+}
 
 * {
   padding: 0;
@@ -9,7 +21,12 @@ $dark-color: #05386b;
 }
 
 body {
-  background: linear-gradient(to left, $primary-color, $secondary-color);
+  background: linear-gradient(
+    to left,
+    var(--primary-color),
+    var(--secondary-color)
+  );
+  color: set-text-color(var(--primary-color)) !important;
   font-family: vazir !important;
 }
 
@@ -23,4 +40,20 @@ body {
 
 .ltr {
   direction: ltr !important;
+}
+
+// // Make text Color based on background
+@function set-text-color($color) {
+  @if (lightness($color) > 40) {
+    @return var(--dark-color);
+  } @else {
+    @return var(--light-color);
+  }
+}
+
+// // Set background and text color
+
+@mixin set-Background($color) {
+  background-color: $color;
+  color: set-text-color($color);
 }

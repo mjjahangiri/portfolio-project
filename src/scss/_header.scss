@@ -13,6 +13,14 @@
   justify-content: center;
   z-index: 2;
 }
+%color {
+  position: absolute;
+  top: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+}
 %mainMenu {
   padding: 5px 0px;
   list-style: none;
@@ -23,6 +31,15 @@
   border-top-left-radius: 10px;
 }
 %langMenu {
+  padding: 0px;
+  list-style: none;
+  transition: all 0.3s ease-in-out;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0px;
+}
+%colorMenu {
   padding: 0px;
   list-style: none;
   transition: all 0.3s ease-in-out;
@@ -42,8 +59,84 @@
   font-size: 1rem;
   font-weight: bold;
   line-height: 35px;
-  border: 1px solid $dark-color;
-  color: $dark-color;
+  border: 1px solid var(--dark-color);
+  color: var(--dark-color);
+}
+.FaColor {
+  @extend %color;
+  left: 20px;
+  direction: rtl;
+
+  &:hover {
+    // @include set-Background(var(--primary-color));
+    cursor: pointer;
+    background-color: var(--primary-color);
+    border-radius: 10px;
+    color: inherit !important;
+  }
+}
+.EnColor {
+  @extend %color;
+  right: 20px;
+  direction: ltr;
+
+  &:hover {
+    // @include set-Background(var(--secondary-color));
+    cursor: pointer;
+    background-color: var(--secondary-color);
+    border-radius: 10px;
+    color: inherit !important;
+  }
+}
+.FaColorMenu {
+  @extend %colorMenu;
+  background-color: var(--primary-color);
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+
+  a {
+    justify-content: center;
+    display: flex;
+    text-decoration: none;
+    align-items: center;
+    height: 100%;
+
+    &:hover {
+      cursor: pointer;
+      border-radius: 10px;
+      background-color: var(--dark-color);
+    }
+  }
+
+  li {
+    height: 40px;
+    width: 40px;
+  }
+}
+.EnColorMenu {
+  @extend %colorMenu;
+  background-color: var(--secondary-color);
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+
+  a {
+    justify-content: center;
+    display: flex;
+    text-decoration: none;
+    align-items: center;
+    height: 100%;
+
+    &:hover {
+      cursor: pointer;
+      border-radius: 10px;
+      background-color: var(--dark-color);
+    }
+  }
+
+  li {
+    height: 40px;
+    width: 40px;
+  }
 }
 .EnLang {
   @extend %lang;
@@ -51,10 +144,11 @@
   direction: ltr;
 
   &:hover {
+    // @include set-Background(var(--secondary-color));
     cursor: pointer;
+    background-color: var(--secondary-color);
     border-radius: 10px;
-    color: $light-color;
-    background-color: $secondary-color;
+    color: inherit !important;
   }
 }
 .FaLang {
@@ -63,10 +157,11 @@
   direction: rtl;
 
   &:hover {
+    // @include set-Background(var(--primary-color));
     cursor: pointer;
+    background-color: var(--primary-color);
     border-radius: 10px;
-    color: $dark-color;
-    background-color: $primary-color;
+    color: inherit !important;
   }
 }
 .FaMenu {
@@ -95,25 +190,38 @@
   justify-content: center;
 
   &:hover {
-    color: $dark-color !important;
+    color: var(--dark-color) !important;
+  }
+}
+.colorToggleLink {
+  margin: 0 !important;
+  padding: 0 !important;
+  display: flex;
+  height: 40px;
+  width: 40px;
+  align-items: center;
+  justify-content: center;
+
+  &:hover {
+    color: var(--dark-color) !important;
   }
 }
 .EnMainMenu {
   @extend %mainMenu;
-  background-color: $secondary-color;
+  background-color: var(--secondary-color);
 
   a {
     justify-content: center;
     display: flex;
     margin: 10px auto;
     padding: 5px 0px;
-    color: $light-color !important;
+    color: var(--light-color) !important;
     text-decoration: none;
 
     &:hover {
-      color: $light-color;
+      color: var(--light-color);
       transform: translateX(15%);
-      border-top: 1px solid $dark-color !important;
+      border-top: 1px solid var(--dark-color) !important;
     }
   }
 
@@ -121,7 +229,7 @@
     height: 40px;
 
     &:hover {
-      background-color: $secondary-color;
+      background-color: var(--secondary-color);
     }
 
     &:hover + h4 {
@@ -131,20 +239,20 @@
 }
 .FaMainMenu {
   @extend %mainMenu;
-  background-color: $primary-color;
+  background-color: var(--primary-color);
 
   a {
     justify-content: center;
     display: flex;
     margin: 10px auto;
     padding: 5px 0px;
-    color: $light-color !important;
+    color: var(--light-color) !important;
     text-decoration: none;
 
     &:hover {
-      color: $light-color;
+      color: var(--light-color);
       transform: translateX(-15%);
-      border-top: 1px solid $dark-color !important;
+      border-top: 1px solid var(--dark-color) !important;
     }
   }
 
@@ -152,7 +260,7 @@
     height: 40px;
 
     &:hover {
-      background-color: $primary-color;
+      background-color: var(--primary-color);
     }
 
     &:hover + h4 {
@@ -162,23 +270,23 @@
 }
 .FaLangMenu {
   @extend %langMenu;
-  background-color: $primary-color;
+  background-color: var(--primary-color);
   border-top-right-radius: 10px;
   border-bottom-right-radius: 10px;
 
   a {
     justify-content: center;
     display: flex;
-    color: $dark-color !important;
+    color: var(--dark-color) !important;
     text-decoration: none;
     align-items: center;
     height: 100%;
 
     &:hover {
       cursor: pointer;
-      color: $secondary-color !important;
+      color: var(--secondary-color) !important;
       border-radius: 10px;
-      background-color: $dark-color;
+      background-color: var(--dark-color);
     }
   }
 
@@ -189,23 +297,23 @@
 }
 .EnLangMenu {
   @extend %langMenu;
-  background-color: $secondary-color;
+  background-color: var(--secondary-color);
   border-top-left-radius: 10px;
   border-bottom-left-radius: 10px;
 
   a {
     justify-content: center;
     display: flex;
-    color: $dark-color !important;
+    color: var(--dark-color) !important;
     text-decoration: none;
     align-items: center;
     height: 100%;
 
     &:hover {
       cursor: pointer;
-      color: $secondary-color !important;
+      color: var(--secondary-color) !important;
       border-radius: 10px;
-      background-color: $dark-color;
+      background-color: var(--dark-color);
     }
   }
 
@@ -219,9 +327,10 @@
   border-radius: 10px;
 
   &:hover {
+    // @include set-Background(var(--dark-color));
     cursor: pointer;
-    color: $secondary-color;
-    background-color: $dark-color;
+    background-color: var(--dark-color);
+    color: var(--light-color);
   }
 }
 .FaMenuLabel {
@@ -230,7 +339,7 @@
   right: 40px;
   border-top-left-radius: 10px;
   border-bottom-left-radius: 10px;
-  background-color: $primary-color;
+  background-color: var(--primary-color);
 }
 .EnMenuLabel {
   @extend %menuLabel;
@@ -238,5 +347,5 @@
   left: 40px;
   border-top-right-radius: 10px;
   border-bottom-right-radius: 10px;
-  background-color: $secondary-color;
+  background-color: var(--secondary-color);
 }

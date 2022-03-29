@@ -21,10 +21,10 @@
 
     a {
       margin: 0px 8px;
-      color: $dark-color;
+      color: var(--dark-color);
 
       &:hover {
-        color: $secondary-color;
+        color: var(--secondary-color);
       }
     }
   }
@@ -39,9 +39,9 @@
     display: block;
 
     span {
-      color: $light-color;
+      color: var(--light-color);
       font-weight: bold;
-      text-shadow: 0px 5px 10px $dark-color;
+      text-shadow: 0px 5px 10px var(--dark-color);
     }
   }
 
@@ -57,6 +57,6 @@
 //  Text Section Styles
 .textSection {
   padding: 30px 0px !important;
-  box-shadow: 0px 10px 30px $primary-color;
+  box-shadow: 0px 10px 30px var(--primary-color);
   border-radius: 10px;
 }
